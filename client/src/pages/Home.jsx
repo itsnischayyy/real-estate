@@ -69,8 +69,8 @@ export default function Home() {
   return (
     <div>
       {/* top */}
-      <div className="flex flex-col gap-6 p-28 mx-auto bg-gray-300">
-        <h1 className="text-slate-700 font-bold text-3xl lg:text-6xl">
+      <div className="flex flex-col gap-6 py-20 px-4 xl:p-28 xl:py-28 bg-gray-300 lg:p-14 lg:py-24 md:p-8 md:py-14 sm:p-6">
+        <h1 className="text-slate-700 font-bold text-3xl lg:text-5xl">
           Find the <span className="text-slate-500">perfect place</span>
           <br />
           with ease

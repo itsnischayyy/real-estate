@@ -5,6 +5,7 @@ import SwiperCore from 'swiper';
 import { useSelector } from 'react-redux';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
+import './Loading.css';
 import {
   FaBath,
   FaBed,
@@ -52,7 +53,15 @@ export default function Listing() {
 
   return (
     <main>
-      {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
+      {loading && <div id="page" className='p-28'>
+            <div id="container">
+              <div id="ring2"></div>
+              <div id="ring2"></div>
+              <div id="ring2"></div>
+              <div id="ring2"></div>
+              <div id="h3">loading</div>
+            </div>
+          </div>}
       {error && (
         <p className='text-center my-7 text-2xl'>Something went wrong!</p>
       )}
